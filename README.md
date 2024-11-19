@@ -22,7 +22,7 @@ A virtual environment is an isolated Python environment that allows you to insta
 
 To activate the virtual environment, run the following command in your terminal:
 
-.\menv\Scripts\activate
+.\venv\Scripts\activate
 This will activate the virtual environment and you should see the name of the virtual environment in your terminal prompt.
 
 2. Install Django:
@@ -42,6 +42,15 @@ pip install requests
 Mathfilters is a Django library that provides math functions and filters for templates. To install mathfilters, run the following command in your terminal:
 
 pip install django-mathfilters
+
+5. Run Database Migrations
+Django requires database migrations to set up its database structure:
+python manage.py migrate
+
+**6.  Start the Development Server**
+Launch the Django development server:
+python manage.py runserver
+
 
 
 
